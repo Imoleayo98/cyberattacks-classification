@@ -1,6 +1,6 @@
 # Cyberattacks Classification Model
 
-_A project containing a simple neural network for predictive analysis of cyberattack severity (Typical Severity) based on the description (Name)
+_A project containing a simple neural network for predictive analysis of cyberattack severity (Typical Severity) based on the description (Name)_
 
 ## Install All Dependencies
 _You can install all required dependencies for the project using this line of code_
