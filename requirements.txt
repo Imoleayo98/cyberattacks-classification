@@ -4,4 +4,4 @@ numpy~=1.23.2
 flask~=2.2.2
 tensorflow
 waitress==2.1.2
-flask-corsThenewlagos1998
+flask-cors
