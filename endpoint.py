@@ -1,8 +1,10 @@
 from test import check_severity
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from waitress import serve
 
 app = Flask(__name__)
+CORS(app)
 # x = ["Accessing Functionality Not Properly Constrained by ACLs", "Buffer Overflow via Environment Variables",
 #      "Basic Phishing Email for Login Credentials", "Zero-Day Exploit in Critical Infrastructure Control Systems.",
 #      "Ransomware Attack on Small Business Networks.", "Data Breach in Healthcare System Due to Insider Negligence.",
@@ -27,4 +29,6 @@ def get_severity():
 
 
 if __name__ == "__main__":
-    serve(app, port=5000)
+    port = 4581
+    print('Server started on port ', port)
+    serve(app, port=port)
